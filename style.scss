@@ -68,7 +68,6 @@ nav {
   position: absolute;
   pointer-events: none; 
   top:0;
-  left:-1px; 
   li {
     margin: 20px 0px;
 
@@ -637,7 +636,9 @@ nav {
     
     img {
       height: 150px;
-      border-radius: 30px;      background-blend-mode: overlay;
+      border-radius: 30px;     
+      background-blend-mode: overlay;
+      z-index: 6;
     }
     
     p{

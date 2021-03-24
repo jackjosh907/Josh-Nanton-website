@@ -68,10 +68,10 @@
       <div class="ring four"></div>
 
       <div class="col-12 contact-wrap">
-        <form action="">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email" type="email">
-           <textarea name="" id="" cols="30" rows="10" placeholder="Write Me A Message "></textarea>
+        <form name="contact" method="POST" data-netlify="true" action="">
+          <input type="text" name="name" placeholder="Name">
+          <input name="email" placeholder="Email" type="email">
+           <textarea name="message" id="" cols="30" rows="10" placeholder="Write Me A Message "></textarea>
            <button class="submit">Submit</button>
         </form>
       </div>
