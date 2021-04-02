@@ -61,6 +61,7 @@
           transform: rotate(90deg);
 }
 .nav-container .menu {
+  list-style: none;
   height: 100vh;
   width: 100vw;
   background: url(/img/giphy.gif) no-repeat center/cover;
@@ -85,7 +86,6 @@
   position: absolute;
   pointer-events: none;
   top: 0;
-  left: -1px;
 }
 .nav-container .menu li {
   margin: 20px 0px;
@@ -691,6 +691,7 @@
   height: 150px;
   border-radius: 30px;
   background-blend-mode: overlay;
+  z-index: 6;
 }
 .row.about-third .container p {
   color: white;
