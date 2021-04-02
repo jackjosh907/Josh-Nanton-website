@@ -428,6 +428,7 @@
 }
 .row.lower-third .container .project-wrap img {
   height: 200px;
+  width: 300px;
 }
 .row.lower-third .container .project-wrap h5 {
   padding-top: 5px;
