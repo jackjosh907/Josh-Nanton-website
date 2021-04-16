@@ -22,9 +22,9 @@
 .nav-container nav .burger-wrap {
   position: absolute;
   z-index: 30;
-  height: 50px;
+  height: 55px;
   z-index: 30;
-  width: 50px;
+  width: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,6 +55,8 @@
   cursor: pointer;
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
+  padding: 2px;
+  margin-left: 5px;
 }
 .nav-container nav .burger-wrap.active {
   -webkit-transform: rotate(90deg);
@@ -106,6 +108,66 @@
   pointer-events: all;
 }
 
+@media (min-width: 765px) {
+  .nav-container {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+  }
+  .nav-container nav {
+    width: 100vw;
+    height: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .nav-container nav .burger-wrap {
+    position: absolute;
+    z-index: 30;
+    height: 70px;
+    z-index: 30;
+    width: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 3px black solid;
+    border-radius: 50px;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .nav-container nav .burger-wrap .burger {
+    outline: 2px black solid;
+    border-radius: 5px;
+    height: 3px;
+    width: 30px;
+    background: white;
+    margin: 3px 2.5px;
+    cursor: pointer;
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+    margin-left: 11.5px;
+    padding: 3.5px;
+  }
+  .nav-container nav .burger-wrap.active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
 .row.landing .container {
   padding: 0;
   overflow-y: hidden;

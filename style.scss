@@ -22,10 +22,10 @@ nav {
   .burger-wrap{
     position: absolute;
     z-index: 30;
-    height: 50px;
+    height: 55px;
     // top: 18px;
     z-index: 30;
-    width: 50px;
+    width: 55px;
     display: flex;
     flex-direction: column;
     background: white;
@@ -43,6 +43,10 @@ nav {
     margin: 3px 2.5px;
     cursor: pointer;
     transform: translateX(5px);
+    padding: 2px;
+    margin-left: 5px;
+
+
   }
 }
   
@@ -95,6 +99,57 @@ nav {
 
  }
 }
+
+@media(min-width:765px){
+  .nav-container{
+  
+    position: fixed;
+    z-index: 20;
+    top: 0;
+  nav {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+    .burger-wrap{
+      position: absolute;
+      z-index: 30;
+      height: 70px;
+      // top: 18px;
+      z-index: 30;
+      width: 70px;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      justify-content: center;
+      border:3px black solid;
+      border-radius: 50px;
+      transform: rotate(0);
+      transition: transform 1s ease-in-out;
+    .burger {
+      outline: 2px black solid;
+      border-radius: 5px;
+      height: 3px;
+      width: 30px;
+      background: rgb(255, 255, 255);
+      margin: 3px 2.5px;
+      cursor: pointer;
+      transform: translateX(5px);
+      margin-left: 11.5px;
+      padding: 3.5px;
+    }
+  }
+    
+  .burger-wrap.active {
+    transform: rotate(90deg);
+  }
+  
+   
+  }
+}
+  }
+
+ 
 // landing
 
 .row.landing {
